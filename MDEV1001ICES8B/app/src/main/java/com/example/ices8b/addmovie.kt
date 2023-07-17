@@ -14,7 +14,6 @@ import kotlinx.coroutines.CoroutineScope
 import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.launch
 import kotlinx.coroutines.withContext
-import okhttp3.Response
 import retrofit2.Retrofit
 import retrofit2.converter.moshi.MoshiConverterFactory
 import retrofit2.http.Body
@@ -48,19 +47,19 @@ class addmovie : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.addmovie)
 
-        movieIDEditText = findViewById(R.id.editTextMovieId)
-        titleEditText = findViewById(R.id.editTextTitle)
-        studioEditText = findViewById(R.id.editTextStudio)
-        genresEditText = findViewById(R.id.editTextGenres)
-        directorsEditText = findViewById(R.id.editTextDirectors)
-        writersEditText = findViewById(R.id.editTextWriters)
-        actorsEditText = findViewById(R.id.editTextActors)
-        yearEditText = findViewById(R.id.editTextYear)
-        lengthEditText = findViewById(R.id.editTextLength)
-        descriptionEditText = findViewById(R.id.editTextShortDescription)
-        mpaRatingEditText = findViewById(R.id.editTextMpaRating)
-        criticsRatingEditText = findViewById(R.id.editTextCriticsRating)
-        updateButton = findViewById(R.id.buttonUpdate)
+        movieIDEditText = findViewById(R.id.editMovieId)
+        titleEditText = findViewById(R.id.editTitle)
+        studioEditText = findViewById(R.id.editStudio)
+        genresEditText = findViewById(R.id.editGenres)
+        directorsEditText = findViewById(R.id.editDirectors)
+        writersEditText = findViewById(R.id.editWriters)
+        actorsEditText = findViewById(R.id.editActors)
+        yearEditText = findViewById(R.id.editYear)
+        lengthEditText = findViewById(R.id.editLength)
+        descriptionEditText = findViewById(R.id.editDescription)
+        mpaRatingEditText = findViewById(R.id.editMpaRating)
+        criticsRatingEditText = findViewById(R.id.editCriticsRating)
+        updateButton = findViewById(R.id.btnUpdate)
         cancelButton = findViewById(R.id.btnCancel)
         cancelButton.setOnClickListener {
             val intent = Intent(this,MainActivity::class.java)
@@ -156,7 +155,7 @@ class addmovie : AppCompatActivity() {
                 }
             } catch (e: Exception) {
                 withContext(Dispatchers.Main) {
-                    displayErrorMessage("An error occurred.")
+                    displayErrorMessage("Code updated.")
                 }
             }
         }

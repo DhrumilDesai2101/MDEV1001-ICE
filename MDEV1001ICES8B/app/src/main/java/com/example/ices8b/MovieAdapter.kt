@@ -17,11 +17,11 @@ class MovieAdapter(var movies: List<Movie>) : RecyclerView.Adapter<MovieAdapter.
     var onDeleteClickListener: ((Movie) -> Unit)? = null
 
     class ViewHolder(itemView: View) : RecyclerView.ViewHolder(itemView) {
-        val titleTextView: TextView = itemView.findViewById(R.id.titleTextView)
-        val studioTextView: TextView = itemView.findViewById(R.id.studioTextView)
-        val ratingTextView: TextView = itemView.findViewById(R.id.ratingTextView)
+        val titleTextView: TextView = itemView.findViewById(R.id.title)
+        val studioTextView: TextView = itemView.findViewById(R.id.studio)
+        val ratingTextView: TextView = itemView.findViewById(R.id.rating)
         val constraintLayout:ConstraintLayout = itemView.findViewById(R.id.constraintLayout)
-        val buttonDelete:Button = itemView.findViewById(R.id.buttonDelete)
+        val buttonDelete:Button = itemView.findViewById(R.id.Delete)
     }
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): ViewHolder {
         val itemView = LayoutInflater.from(parent.context).inflate(R.layout.movieitem, parent, false)
@@ -39,9 +39,9 @@ class MovieAdapter(var movies: List<Movie>) : RecyclerView.Adapter<MovieAdapter.
         val rating = movie.criticsRating
         val context = holder.itemView.context
         val color = when {
-            rating > 7 -> ContextCompat.getColor(context, R.color.red)
+            rating > 7 -> ContextCompat.getColor(context, R.color.green)
             rating > 5 -> ContextCompat.getColor(context, R.color.yellow)
-            else -> ContextCompat.getColor(context, R.color.green)
+            else -> ContextCompat.getColor(context, R.color.red)
         }
         holder.ratingTextView.setBackgroundColor(color)
         holder.constraintLayout.setOnClickListener {
