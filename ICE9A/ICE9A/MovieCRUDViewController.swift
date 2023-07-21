@@ -1,10 +1,3 @@
-//
-//  ViewController.swift
-//  ICE9A
-//
-//  Created by Dhrumil Jigneshkumar Desai on 2023-07-21.
-//
-
 import UIKit
 
 struct UpdatedResponse: Codable
@@ -93,7 +86,7 @@ class MovieCRUDViewController: UIViewController, UITableViewDelegate, UITableVie
             do {
                 
                 let response = try JSONDecoder().decode(UpdatedResponse.self, from: data)
-                print ("Last Updated Locally: \(self?.lastUpdated) Last Updated Remotely: \(response.lastUpdated)")
+                print ("Last Updated Locally: \(String(describing: self?.lastUpdated)) Last Updated Remotely: \(response.lastUpdated)")
                 if self!.lastUpdated < response.lastUpdated {
                     self!.lastUpdated = response.lastUpdated
                     self?.fetchMoviesAndUpdateUI()
@@ -279,4 +272,3 @@ class MovieCRUDViewController: UIViewController, UITableViewDelegate, UITableVie
     }
 
 }
-
