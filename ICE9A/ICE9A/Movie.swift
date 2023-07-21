@@ -1,9 +1,11 @@
 //
 //  Movie.swift
-//  ICE9
+//  ICE9A
 //
-//  Created by Dhrumil Jigneshkumar Desai on 2023-07-14.
+//  Created by Dhrumil Jigneshkumar Desai on 2023-07-21.
 //
+
+import Foundation
 
 struct Movie: Codable
 {
