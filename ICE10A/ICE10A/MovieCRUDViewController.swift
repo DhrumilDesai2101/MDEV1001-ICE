@@ -37,9 +37,8 @@ class MovieCRUDViewController: UIViewController, UITableViewDelegate, UITableVie
         timer = nil
     }
     
-    
-        
-    func fetchMoviesAndUpdateUI() {
+    func fetchMoviesAndUpdateUI()
+    {
         fetchMovies { [weak self] movies, error in
             DispatchQueue.main.async
             {
@@ -106,24 +105,43 @@ class MovieCRUDViewController: UIViewController, UITableViewDelegate, UITableVie
     
     func fetchMovies(completion: @escaping ([Movie]?, Error?) -> Void)
     {
+        // New for ICE10: Retrieve AuthToken from UserDefaults
+        guard let authToken = UserDefaults.standard.string(forKey: "AuthToken") else
+        {
+            print("AuthToken not available.")
+            completion(nil, nil)
+            return
+        }
+        
+        // Configure the Request
         guard let url = URL(string: "https://mdev1001-m2023-api.onrender.com/api/list") else
         {
             completion(nil, nil) // Handle URL error
             return
         }
+        
+        // New for ICE 10
+        var request = URLRequest(url: url)
+            request.httpMethod = "GET"
+            request.setValue("Bearer \(authToken)", forHTTPHeaderField: "Authorization")
 
-        URLSession.shared.dataTask(with: url) { data, _, error in
+        // Issue Request
+        URLSession.shared.dataTask(with: request) { data, _, error in
             if let error = error {
+                print("Network Error")
                 completion(nil, error) // Handle network error
                 return
             }
 
             guard let data = data else {
+                print("Empty Response")
                 completion(nil, nil) // Handle empty response
                 return
             }
 
+            // Response
             do {
+                print("Decoding JSON Data...")
                 let movies = try JSONDecoder().decode([Movie].self, from: data)
                 completion(movies, nil) // Success
             } catch {
@@ -247,15 +265,26 @@ class MovieCRUDViewController: UIViewController, UITableViewDelegate, UITableVie
     func deleteMovie(at indexPath: IndexPath)
     {
         let movie = movies[indexPath.row]
+        
+        // New for ICE10
+        guard let authToken = UserDefaults.standard.string(forKey: "AuthToken") else
+        {
+            print("AuthToken not available.")
+            return
+        }
 
         guard let url = URL(string: "https://mdev1001-m2023-api.onrender.com/api/delete/\(movie._id)") else {
             print("Invalid URL")
             return
         }
 
+        // Configure Request
         var request = URLRequest(url: url)
         request.httpMethod = "DELETE"
+        // New for ICE10
+        request.setValue("Bearer \(authToken)", forHTTPHeaderField: "Authorization")
 
+        // Issue Request
         let task = URLSession.shared.dataTask(with: request) { [weak self] data, response, error in
             if let error = error {
                 print("Failed to delete movie: \(error)")
@@ -269,6 +298,19 @@ class MovieCRUDViewController: UIViewController, UITableViewDelegate, UITableVie
         }
             
         task.resume()
+    }
+    
+    // New for ICE 10
+    @IBAction func logoutButtonPressed(_ sender: UIButton)
+    {
+        // Remove the token from UserDefaults or local storage to indicate logout
+        UserDefaults.standard.removeObject(forKey: "AuthToken")
+        
+        // Clear the username and password in the LoginViewController
+        APILoginViewController.shared?.ClearLoginTextFields()
+        
+        // unwind
+        performSegue(withIdentifier: "unwindToLogin", sender: self)
     }
 
 }
