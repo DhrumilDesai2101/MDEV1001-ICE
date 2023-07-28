@@ -17,6 +17,8 @@
 		E978A77F2A6AD1C600FB4E95 /* MovieTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E978A77E2A6AD1C600FB4E95 /* MovieTableViewCell.swift */; };
 		E978A7812A6AD1E700FB4E95 /* Movie.swift in Sources */ = {isa = PBXBuildFile; fileRef = E978A7802A6AD1E700FB4E95 /* Movie.swift */; };
 		E978A7832A6AD5A500FB4E95 /* AddEditMovieViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E978A7822A6AD5A500FB4E95 /* AddEditMovieViewController.swift */; };
+		E9980A5A2A73F0E9007F67A5 /* APILoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9980A592A73F0E9007F67A5 /* APILoginViewController.swift */; };
+		E9980A5C2A73F141007F67A5 /* APIRegisterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9980A5B2A73F141007F67A5 /* APIRegisterViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -32,6 +34,8 @@
 		E978A77E2A6AD1C600FB4E95 /* MovieTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieTableViewCell.swift; sourceTree = "<group>"; };
 		E978A7802A6AD1E700FB4E95 /* Movie.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Movie.swift; sourceTree = "<group>"; };
 		E978A7822A6AD5A500FB4E95 /* AddEditMovieViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddEditMovieViewController.swift; sourceTree = "<group>"; };
+		E9980A592A73F0E9007F67A5 /* APILoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APILoginViewController.swift; sourceTree = "<group>"; };
+		E9980A5B2A73F141007F67A5 /* APIRegisterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIRegisterViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -75,6 +79,8 @@
 				E978A77E2A6AD1C600FB4E95 /* MovieTableViewCell.swift */,
 				E978A7802A6AD1E700FB4E95 /* Movie.swift */,
 				E978A7822A6AD5A500FB4E95 /* AddEditMovieViewController.swift */,
+				E9980A592A73F0E9007F67A5 /* APILoginViewController.swift */,
+				E9980A5B2A73F141007F67A5 /* APIRegisterViewController.swift */,
 			);
 			path = ICE10A;
 			sourceTree = "<group>";
@@ -151,9 +157,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				E978A77F2A6AD1C600FB4E95 /* MovieTableViewCell.swift in Sources */,
+				E9980A5A2A73F0E9007F67A5 /* APILoginViewController.swift in Sources */,
 				E978A76C2A6ACF6900FB4E95 /* MovieCRUDViewController.swift in Sources */,
 				E978A7812A6AD1E700FB4E95 /* Movie.swift in Sources */,
 				E978A7832A6AD5A500FB4E95 /* AddEditMovieViewController.swift in Sources */,
+				E9980A5C2A73F141007F67A5 /* APIRegisterViewController.swift in Sources */,
 				E978A7722A6ACF6900FB4E95 /* ICE10A.xcdatamodeld in Sources */,
 				E978A7682A6ACF6900FB4E95 /* AppDelegate.swift in Sources */,
 				E978A76A2A6ACF6900FB4E95 /* SceneDelegate.swift in Sources */,
