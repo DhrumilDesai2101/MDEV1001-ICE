@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp">
+
+    <TextView
+        android:id="@+id/loginLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:text="Movie App Login"
+        android:textSize="30sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/usernameLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/loginLabel"
+        android:layout_marginTop="50dp"
+        android:text="username"
+        android:textSize="17sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/loginLabel" />
+
+    <EditText
+        android:id="@+id/usernameEditText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/usernameLabel"
+        android:layout_marginTop="10dp"
+        android:hint="Enter your username"
+        android:inputType="text"
+        android:textSize="14sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="@id/usernameLabel"
+        app:layout_constraintTop_toBottomOf="@id/usernameLabel" />
+
+    <TextView
+        android:id="@+id/passwordLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/usernameEditText"
+        android:layout_marginTop="20dp"
+        android:text="password"
+        android:textSize="17sp"
+        app:layout_constraintStart_toStartOf="@id/usernameEditText"
+        app:layout_constraintTop_toBottomOf="@id/usernameEditText" />
+
+    <EditText
+        android:id="@+id/passwordEditText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/passwordLabel"
+        android:layout_marginTop="10dp"
+        android:hint="Enter your password"
+        android:inputType="textPassword"
+        android:textSize="14sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="@id/passwordLabel"
+        app:layout_constraintTop_toBottomOf="@id/passwordLabel" />
+
+    <Button
+        android:id="@+id/loginButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/passwordEditText"
+        android:layout_marginTop="30dp"
+        android:text="Login"
+        app:layout_constraintEnd_toEndOf="@id/passwordEditText"
+        app:layout_constraintStart_toStartOf="@+id/passwordEditText"
+        app:layout_constraintTop_toBottomOf="@id/passwordEditText" />
+
+    <TextView
+        android:id="@+id/noAccountLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="No Account? "
+        android:textSize="17sp"
+        android:layout_marginEnd="20dp"
+        app:layout_constraintBottom_toBottomOf="@id/registerButton"
+        app:layout_constraintEnd_toStartOf="@id/registerButton"
+        app:layout_constraintHorizontal_chainStyle="packed"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@id/registerButton" />
+
+    <Button
+        android:id="@+id/registerButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:text="Register Here"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@id/noAccountLabel"
+        app:layout_constraintTop_toBottomOf="@id/loginButton" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
