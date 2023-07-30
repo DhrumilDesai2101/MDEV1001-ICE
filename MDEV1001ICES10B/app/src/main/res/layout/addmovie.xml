@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".addmovie">
+
+    <EditText
+        android:id="@+id/editMovieId"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:hint="Movie Id"
+        android:textSize="20sp"
+        />
+    <EditText
+        android:id="@+id/editTitle"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:hint="Title"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="@id/editMovieId"
+        app:layout_constraintStart_toStartOf="@id/editMovieId"
+        app:layout_constraintTop_toBottomOf="@+id/editMovieId" />
+
+    <EditText
+        android:id="@+id/editStudio"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:hint="Studio"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="@id/editTitle"
+        app:layout_constraintStart_toStartOf="@id/editTitle"
+        app:layout_constraintTop_toBottomOf="@id/editTitle" />
+
+
+    <EditText
+        android:id="@+id/editGenres"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:hint="Genres"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="@id/editStudio"
+        app:layout_constraintStart_toStartOf="@id/editStudio"
+        app:layout_constraintTop_toBottomOf="@id/editStudio" />
+
+    <EditText
+        android:id="@+id/editDirectors"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:hint="Directors"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="@id/editGenres"
+        app:layout_constraintStart_toStartOf="@id/editGenres"
+        app:layout_constraintTop_toBottomOf="@id/editGenres" />
+
+    <EditText
+        android:id="@+id/editWriters"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:hint="Writers"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="@id/editDirectors"
+        app:layout_constraintStart_toStartOf="@id/editDirectors"
+        app:layout_constraintTop_toBottomOf="@id/editDirectors" />
+
+
+    <EditText
+        android:id="@+id/editActors"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:hint="Actors"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="@id/editWriters"
+        app:layout_constraintStart_toStartOf="@id/editWriters"
+        app:layout_constraintTop_toBottomOf="@id/editWriters" />
+
+    <EditText
+        android:id="@+id/editYear"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:hint="Year"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toStartOf="@id/editLength"
+        app:layout_constraintStart_toStartOf="@id/editActors"
+        app:layout_constraintTop_toBottomOf="@id/editActors" />
+
+    <EditText
+        android:id="@+id/editLength"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:hint="Length"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="@id/editActors"
+        app:layout_constraintStart_toEndOf="@id/editYear"
+        app:layout_constraintTop_toTopOf="@id/editYear" />
+
+
+    <EditText
+        android:id="@+id/editDescription"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:hint="Short Description"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="@id/editLength"
+        app:layout_constraintStart_toStartOf="@id/editYear"
+        app:layout_constraintTop_toBottomOf="@id/editYear" />
+
+
+    <EditText
+        android:id="@+id/editMpaRating"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:hint="Mpa Rating"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toStartOf="@id/editCriticsRating"
+        app:layout_constraintStart_toStartOf="@id/editDescription"
+        app:layout_constraintTop_toBottomOf="@id/editDescription" />
+
+    <EditText
+        android:id="@+id/editCriticsRating"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:hint="Critics rating"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="@id/editDescription"
+        app:layout_constraintStart_toEndOf="@id/editMpaRating"
+        app:layout_constraintTop_toTopOf="@id/editMpaRating" />
+
+
+    <Button
+        android:id="@+id/btnCancel"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="10dp"
+        android:text="Cancel"
+        android:textColor="@color/black"
+        android:textSize="22sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@id/btnUpdate"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/btnUpdate"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="10dp"
+        android:text="Update"
+        android:textColor="@color/black"
+        android:textSize="22sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@id/btnCancel" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
