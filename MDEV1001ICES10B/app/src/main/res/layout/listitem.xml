@@ -7,7 +7,7 @@
     android:padding="8dp">
 
     <TextView
-        android:id="@+id/rating"
+        android:id="@+id/ratingTextView"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="4dp"
@@ -15,41 +15,40 @@
         android:textColor="@color/black"
         android:textSize="18sp"
         android:textStyle="bold"
-        app:layout_constraintBottom_toBottomOf="@id/studio"
+        app:layout_constraintBottom_toBottomOf="@id/studioTextView"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
     <TextView
-        android:id="@+id/title"
+        android:id="@+id/titleTextView"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_marginStart="10dp"
         android:textColor="@color/black"
         android:textSize="24sp"
         android:textStyle="bold"
-        app:layout_constraintEnd_toStartOf="@id/Delete"
-        app:layout_constraintStart_toEndOf="@id/rating"
+        app:layout_constraintEnd_toStartOf="@id/buttonDelete"
+        app:layout_constraintStart_toEndOf="@id/ratingTextView"
         app:layout_constraintTop_toTopOf="parent" />
 
     <TextView
-        android:id="@+id/studio"
+        android:id="@+id/studioTextView"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:textColor="@color/black"
         android:textSize="18sp"
-        app:layout_constraintEnd_toEndOf="@id/title"
-        app:layout_constraintStart_toStartOf="@id/title"
-        app:layout_constraintTop_toBottomOf="@id/title" />
+        app:layout_constraintEnd_toEndOf="@id/titleTextView"
+        app:layout_constraintStart_toStartOf="@id/titleTextView"
+        app:layout_constraintTop_toBottomOf="@id/titleTextView" />
 
     <Button
-        android:id="@+id/Delete"
+        android:id="@+id/buttonDelete"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Delete"
         android:textSize="19sp"
-        app:layout_constraintBottom_toBottomOf="@id/studio"
+        app:layout_constraintBottom_toBottomOf="@id/studioTextView"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toTopOf="@id/title"
-
+        app:layout_constraintTop_toTopOf="@id/titleTextView"
         />
 </androidx.constraintlayout.widget.ConstraintLayout>

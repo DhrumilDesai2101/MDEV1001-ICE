@@ -13,6 +13,6 @@ dependencyResolutionManagement {
     }
 }
 
-rootProject.name = "ICE10B"
+rootProject.name = "ICES10B"
 include(":app")
  

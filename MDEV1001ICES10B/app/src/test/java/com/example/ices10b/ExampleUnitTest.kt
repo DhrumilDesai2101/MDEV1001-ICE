@@ -1,4 +1,4 @@
-package com.example.ice10b
+package com.example.ices10b
 
 import org.junit.Test
 
