@@ -20,3 +20,21 @@ data class Movie (
     val mpaRating: String,
     val criticsRating: Double
 ):Parcelable
+{
+    constructor() : this(
+        "",
+        "",
+        0L,
+        "",
+        "",
+        mutableListOf(),
+        mutableListOf(),
+        mutableListOf(),
+        mutableListOf(),
+        0,
+        0,
+        "",
+        "",
+        0.0
+    )
+}
