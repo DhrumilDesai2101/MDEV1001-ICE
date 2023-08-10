@@ -14,8 +14,8 @@
 		E9DDB4592A7D4F4500C2C5FE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E9DDB4582A7D4F4500C2C5FE /* Assets.xcassets */; };
 		E9DDB45C2A7D4F4500C2C5FE /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E9DDB45A2A7D4F4500C2C5FE /* LaunchScreen.storyboard */; };
 		E9E693EF2A7D530300F4B435 /* AddEditFirestoreViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9E693EC2A7D530200F4B435 /* AddEditFirestoreViewController.swift */; };
-		E9E693F02A7D530300F4B435 /* APIRegisterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9E693ED2A7D530300F4B435 /* APIRegisterViewController.swift */; };
-		E9E693F12A7D530300F4B435 /* APILoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9E693EE2A7D530300F4B435 /* APILoginViewController.swift */; };
+		E9E693F02A7D530300F4B435 /* FirebaseRegisterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9E693ED2A7D530300F4B435 /* FirebaseRegisterViewController.swift */; };
+		E9E693F12A7D530300F4B435 /* FirebaseLoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9E693EE2A7D530300F4B435 /* FirebaseLoginViewController.swift */; };
 		E9E693F52A7D534100F4B435 /* MovieTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9E693F22A7D534100F4B435 /* MovieTableViewCell.swift */; };
 		E9E693F62A7D534100F4B435 /* FirestoreCRUDViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9E693F32A7D534100F4B435 /* FirestoreCRUDViewController.swift */; };
 		E9E693F72A7D534100F4B435 /* Movie.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9E693F42A7D534100F4B435 /* Movie.swift */; };
@@ -37,8 +37,8 @@
 		E9DDB45B2A7D4F4500C2C5FE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		E9DDB45D2A7D4F4500C2C5FE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		E9E693EC2A7D530200F4B435 /* AddEditFirestoreViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddEditFirestoreViewController.swift; sourceTree = "<group>"; };
-		E9E693ED2A7D530300F4B435 /* APIRegisterViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = APIRegisterViewController.swift; sourceTree = "<group>"; };
-		E9E693EE2A7D530300F4B435 /* APILoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = APILoginViewController.swift; sourceTree = "<group>"; };
+		E9E693ED2A7D530300F4B435 /* FirebaseRegisterViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FirebaseRegisterViewController.swift; sourceTree = "<group>"; };
+		E9E693EE2A7D530300F4B435 /* FirebaseLoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FirebaseLoginViewController.swift; sourceTree = "<group>"; };
 		E9E693F22A7D534100F4B435 /* MovieTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MovieTableViewCell.swift; sourceTree = "<group>"; };
 		E9E693F32A7D534100F4B435 /* FirestoreCRUDViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FirestoreCRUDViewController.swift; sourceTree = "<group>"; };
 		E9E693F42A7D534100F4B435 /* Movie.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Movie.swift; sourceTree = "<group>"; };
@@ -85,8 +85,8 @@
 				E9E693F42A7D534100F4B435 /* Movie.swift */,
 				E9E693F22A7D534100F4B435 /* MovieTableViewCell.swift */,
 				E9E693EC2A7D530200F4B435 /* AddEditFirestoreViewController.swift */,
-				E9E693EE2A7D530300F4B435 /* APILoginViewController.swift */,
-				E9E693ED2A7D530300F4B435 /* APIRegisterViewController.swift */,
+				E9E693EE2A7D530300F4B435 /* FirebaseLoginViewController.swift */,
+				E9E693ED2A7D530300F4B435 /* FirebaseRegisterViewController.swift */,
 				E9DDB44C2A7D4F3F00C2C5FE /* AppDelegate.swift */,
 				E9DDB44E2A7D4F3F00C2C5FE /* SceneDelegate.swift */,
 				E9DDB4522A7D4F3F00C2C5FE /* Main.storyboard */,
@@ -180,8 +180,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				E9E693F02A7D530300F4B435 /* APIRegisterViewController.swift in Sources */,
-				E9E693F12A7D530300F4B435 /* APILoginViewController.swift in Sources */,
+				E9E693F02A7D530300F4B435 /* FirebaseRegisterViewController.swift in Sources */,
+				E9E693F12A7D530300F4B435 /* FirebaseLoginViewController.swift in Sources */,
 				E9E693F72A7D534100F4B435 /* Movie.swift in Sources */,
 				E9E693F52A7D534100F4B435 /* MovieTableViewCell.swift in Sources */,
 				E9E693EF2A7D530300F4B435 /* AddEditFirestoreViewController.swift in Sources */,

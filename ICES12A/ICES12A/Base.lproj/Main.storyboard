@@ -2,17 +2,16 @@
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="5aj-lP-WfG">
     <device id="retina6_72" orientation="portrait" appearance="light"/>
     <dependencies>
-        <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21679"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--APIRegisterViewController-->
+        <!--FirebaseRegisterViewController-->
         <scene sceneID="8Vh-PS-nAo">
             <objects>
-                <viewController storyboardIdentifier="APIRegisterViewController" title="APIRegisterViewController" id="Nw0-kE-FxE" customClass="APIRegisterViewController" customModule="MDEV1001_M2023_ICE11" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="FirebaseRegisterViewController" title="FirebaseRegisterViewController" id="Nw0-kE-FxE" customClass="FirebaseRegisterViewController" customModule="ICES12A" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="7f1-yv-NdM">
                         <rect key="frame" x="0.0" y="0.0" width="430" height="922"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -144,10 +143,10 @@
             </objects>
             <point key="canvasLocation" x="-2251" y="686"/>
         </scene>
-        <!--APILoginViewController-->
+        <!--FirebaseLoginViewController-->
         <scene sceneID="kbi-5P-JJ0">
             <objects>
-                <viewController storyboardIdentifier="APILoginViewController" title="APILoginViewController" id="5aj-lP-WfG" customClass="APILoginViewController" customModule="MDEV1001_M2023_ICE11" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="FirebaseLoginViewController" title="FirebaseLoginViewController" id="5aj-lP-WfG" customClass="FirebaseLoginViewController" customModule="ICES12A" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Onk-8u-cPu">
                         <rect key="frame" x="0.0" y="0.0" width="430" height="932"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -232,7 +231,7 @@
         <!--FirestoreCRUDViewController-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController storyboardIdentifier="FirestoreCRUDViewController" title="FirestoreCRUDViewController" id="BYZ-38-t0r" customClass="FirestoreCRUDViewController" customModule="MDEV1001_M2023_ICE11" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="FirestoreCRUDViewController" title="FirestoreCRUDViewController" id="BYZ-38-t0r" customClass="FirestoreCRUDViewController" customModule="ICES12A" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="430" height="922"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -242,7 +241,7 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                 <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="MovieCell" rowHeight="80" id="i2v-Xh-YDN" customClass="MovieTableViewCell" customModule="MDEV1001_M2023_ICE11" customModuleProvider="target">
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="MovieCell" rowHeight="80" id="i2v-Xh-YDN" customClass="MovieTableViewCell" customModule="ICES12A" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="50" width="390" height="80"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="i2v-Xh-YDN" id="V2X-iU-bue">
@@ -324,7 +323,7 @@
         <!--AddEditFirestoreViewController-->
         <scene sceneID="7yn-3J-ri6">
             <objects>
-                <viewController storyboardIdentifier="AddEditFirestoreViewController" title="AddEditFirestoreViewController" id="fPb-KB-cW7" customClass="AddEditFirestoreViewController" customModule="MDEV1001_M2023_ICE11" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="AddEditFirestoreViewController" title="AddEditFirestoreViewController" id="fPb-KB-cW7" customClass="AddEditFirestoreViewController" customModule="ICES12A" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="PPu-uS-3xz">
                         <rect key="frame" x="0.0" y="0.0" width="430" height="922"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
