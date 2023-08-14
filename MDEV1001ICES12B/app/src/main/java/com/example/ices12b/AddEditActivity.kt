@@ -1,4 +1,4 @@
-package com.example.ices11b
+package com.example.ICES12B
 
 import android.content.ContentValues.TAG
 import android.content.Intent

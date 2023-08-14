@@ -1,0 +1,46 @@
+{
+  "project_info": {
+    "project_number": "172130370135",
+    "project_id": "mdev1001-m2023-ice11-949d7",
+    "storage_bucket": "mdev1001-m2023-ice11-949d7.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:172130370135:android:99fdda06ad9c5581b55912",
+        "android_client_info": {
+          "package_name": "com.example.ICES12B"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "172130370135-fi3t00bpoot05gimloft4bidq078lrcg.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDtgktCWsiNrf7hvETAmaYqq1dJhWG_7SQ"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "172130370135-fi3t00bpoot05gimloft4bidq078lrcg.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "172130370135-d6pa0v5032d41icsskvuna3170bpmguf.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "ca.georgiancollege.ICES11A"
+              }
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
